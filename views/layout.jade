@@ -13,11 +13,10 @@ html(lang='en')
     |     
     link(rel='icon', href='../../favicon.ico')
     |     
-    title Starter Template for Bootstrap
+    title #{title} Starter Template for Bootstrap
     // Bootstrap core CSS
     link(href='stylesheets/bootstrap.min.css', rel='stylesheet')
     link(href='stylesheets/style.css', rel='stylesheet')
-
   |   
   body
     nav.navbar.navbar-inverse.navbar-fixed-top
@@ -37,28 +36,26 @@ html(lang='en')
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
-              a(href='#') Home
+              a(href='/') Home
             |             
             li
-              a(href='#about') About
+              a(href='/about') About
             |             
             li
-              a(href='#contact') Contact
-        // /.nav-collapse
-    |     
-    .container
-      .starter-template
-      block content
+              a(href='/contact') Contact
+
+        block content
+
+        footer
+          p 2016 All Rights Reserverd 
+
+
 
     // /.container
     //
       Bootstrap core JavaScript
       ==================================================
     // Placed at the end of the document so the pages load faster
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    |     
-    script.
-      window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\\/script>')
-    |     
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js') 
     script(src='javascripts/bootstrap.min.js')
     
